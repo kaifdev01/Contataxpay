@@ -5,11 +5,13 @@ import { assets } from "../assets/assets";
 import Link from "next/link";
 import { MdKeyboardArrowDown, MdClose, MdMenu } from "react-icons/md";
 import { IoIosGlobe } from "react-icons/io";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const router = useRouter();
 
   // Handle scroll effect
   useEffect(() => {
@@ -73,7 +75,10 @@ const Header = () => {
 
           {/* Desktop Services Dropdown */}
           <div className="relative group">
-            <button className="flex items-center gap-1 hover:text-gray-200 transition">
+            <button
+              className="flex items-center gap-1 hover:text-gray-200 transition"
+              onClick={() => router.push("/services")}
+            >
               Services{" "}
               <MdKeyboardArrowDown className="group-hover:rotate-180 transition-transform" />
             </button>

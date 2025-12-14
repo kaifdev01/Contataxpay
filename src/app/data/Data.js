@@ -214,3 +214,36 @@ export const accordion = [
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   },
 ];
+
+export const invoicing2 = [
+  {
+    id: 0,
+    title: "Fast Processing",
+    desc: "Quick, hassle-free company setup and updates.",
+    color: "#a3d1f8",
+  },
+  {
+    id: 1,
+    title: "Fully Compliant",
+    desc: "All registrations and changes meet legal requirements.",
+    color: "#e1deed",
+  },
+  {
+    id: 2,
+    title: "Zero Paperwork Stress",
+    desc: "We handle all documents and filings for you.",
+    color: "#E8F3FF",
+  },
+  {
+    id: 3,
+    title: "Expert Guidance",
+    desc: "Professional advice for the best business structure.",
+    color: "#74AAF8",
+  },
+  {
+    id: 4,
+    title: "Flexible Options",
+    desc: "Tailored services for your business type and needs.",
+    color: "#A3D1F8",
+  },
+];

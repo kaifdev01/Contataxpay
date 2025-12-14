@@ -27,10 +27,12 @@ import line from "./images/line.png";
 import featureBg from "./images/feature-bg.png";
 import heroBg2 from "./images/hero-bg2.png";
 import hireBg from "./images/hire-bg.png";
-import service1 from "./images/service1.png";
-import service2 from "./images/service2.png";
-import hireShadow from "./images/hireShadow.png";
-import benefitshadow from "./images/benefitshadow.png";
+import hireShadow from "./images/hire-shadow.png";
+import leftLine from "./images/left-line.png";
+import rightLine from "./images/right-line.png";
+import benifitsBg from "./images/benifits-bg.png";
+import benifitsShadow from "./images/benifits-shadow.png";
+import tick from "./images/tick.png";
 
 export const assets = {
   logo,
@@ -62,8 +64,10 @@ export const assets = {
   featureBg,
   heroBg2,
   hireBg,
-  service1,
-  service2,
   hireShadow,
-  benefitshadow,
+  leftLine,
+  rightLine,
+  benifitsBg,
+  benifitsShadow,
+  tick,
 };
