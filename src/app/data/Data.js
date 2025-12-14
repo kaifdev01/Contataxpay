@@ -84,6 +84,39 @@ export const invoicing = [
   },
 ];
 
+export const invoicing2 = [
+  {
+    id: 0,
+    title: "Fast Processing",
+    desc: "Quick, hassle-free company setup and updates.",
+    color: "#a3d1f8",
+  },
+  {
+    id: 1,
+    title: "Fully Compliant",
+    desc: "All registrations and changes meet legal requirements.",
+    color: "#e1deed",
+  },
+  {
+    id: 2,
+    title: "Zero Paperwork Stress",
+    desc: "We handle all documents and filings for you.",
+    color: "#E8F3FF",
+  },
+  {
+    id: 3,
+    title: "Expert Guidance",
+    desc: "Professional advice for the best business structure.",
+    color: "#74AAF8",
+  },
+  {
+    id: 4,
+    title: "Flexible Options",
+    desc: "Tailored services for your business type and needs.",
+    color: "#A3D1F8",
+  },
+  
+];
 export const services = [
   {
     id: 0,

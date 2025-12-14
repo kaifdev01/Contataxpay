@@ -48,9 +48,8 @@ const Header = () => {
     <>
       {/* Desktop & Tablet Header */}
       <div
-        className={`hidden md:flex bg-[#1e3593] mx-3 lg:mx-5 my-3 lg:my-5 items-center justify-between rounded-full p-3 px-4 lg:px-7 transition-all duration-300 ${
-          scrolled ? "shadow-lg" : ""
-        }`}
+        className={`hidden md:flex bg-[#1e3593] mx-3 lg:mx-5 my-3 lg:my-5 items-center justify-between rounded-full p-3 px-4 lg:px-7 transition-all duration-300 ${scrolled ? "shadow-lg" : ""
+          }`}
       >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
@@ -78,18 +77,24 @@ const Header = () => {
               Services{" "}
               <MdKeyboardArrowDown className="group-hover:rotate-180 transition-transform" />
             </button>
-            <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[180px] z-50">
+            <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
               <Link
-                href="/"
+                href="/services"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 first:rounded-t-lg"
               >
-                Service 1
+                Tax Consultation
               </Link>
               <Link
-                href="/"
+                href="/services"
+                className="block px-4 py-3 text-gray-700 hover:bg-blue-50"
+              >
+                Bookkeeping
+              </Link>
+              <Link
+                href="/services"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 last:rounded-b-lg"
               >
-                Service 2
+                Payroll Services
               </Link>
             </div>
           </div>
@@ -185,9 +190,8 @@ const Header = () => {
 
         {/* Mobile Menu Sidebar */}
         <div
-          className={`fixed top-0 left-0 h-full w-[280px] sm:w-[320px] bg-[#1e3593] z-50 transform transition-transform duration-300 ease-in-out ${
-            isMenuOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
+          className={`fixed top-0 left-0 h-full w-[280px] sm:w-[320px] bg-[#1e3593] z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
         >
           {/* Menu Header */}
           <div className="flex items-center justify-between p-4 border-b border-white/20">
@@ -235,31 +239,36 @@ const Header = () => {
               >
                 Services
                 <MdKeyboardArrowDown
-                  className={`transition-transform duration-200 ${
-                    isServicesOpen ? "rotate-180" : ""
-                  }`}
+                  className={`transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  isServicesOpen ? "max-h-40" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${isServicesOpen ? "max-h-60" : "max-h-0"
+                  }`}
               >
                 <div className="ml-4 mt-1 flex flex-col gap-1">
                   <Link
-                    href="/"
+                    href="/services"
                     className="py-2 px-4 text-white/90 hover:bg-white/10 rounded-lg transition text-sm active:bg-white/20"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Service 1
+                    Tax Consultation
                   </Link>
                   <Link
-                    href="/"
+                    href="/services"
                     className="py-2 px-4 text-white/90 hover:bg-white/10 rounded-lg transition text-sm active:bg-white/20"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Service 2
+                    Bookkeeping
+                  </Link>
+                  <Link
+                    href="/services"
+                    className="py-2 px-4 text-white/90 hover:bg-white/10 rounded-lg transition text-sm active:bg-white/20"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Payroll Services
                   </Link>
                 </div>
               </div>
