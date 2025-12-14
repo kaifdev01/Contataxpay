@@ -84,7 +84,7 @@ export const invoicing = [
   },
 ];
 
-export const invoicing2 = [
+export const serviceInvoicing = [
   {
     id: 0,
     title: "Fast Processing",
@@ -115,7 +115,6 @@ export const invoicing2 = [
     desc: "Tailored services for your business type and needs.",
     color: "#A3D1F8",
   },
-  
 ];
 export const services = [
   {

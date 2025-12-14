@@ -3,10 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { assets } from "../assets/assets";
 
-import { invoicing2 } from "@/app/data/Data";
+import { serviceInvoicing } from "@/app/data/Data";
 import { IoIosArrowUp } from "react-icons/io";
-import { IoPlayBackSharp, IoPlayForward } from "react-icons/io5";
-import { HiPause } from "react-icons/hi2";
 
 const faqItems = [
   {
@@ -356,7 +354,7 @@ const ServicesPage = () => {
           Benefits
         </h2>
         <div className="flex flex-wrap justify-center w-[90%] lg:gap:10 text-center mx-auto gap-4 md:gap-6 mt-8 lg:mt-32 md:mt-12 ">
-          {invoicing2.map((data) => (
+          {serviceInvoicing.map((data) => (
             <div
               key={data.id}
               className={`rounded-3xl flex flex-col gap-4 md:gap-6 items-center justify-center p-6 min-h-[160px] md:h-[191px] md:w-[220px] ${
