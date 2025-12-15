@@ -46,6 +46,15 @@ const Feature_Section = () => {
                 </div>
               )}
 
+              {/* bg-shadow */}
+              <div
+                style={{
+                  backgroundImage: `url(${assets.featureIconBg.src})`,
+                  zIndex: -1,
+                }}
+                className="bg-cover bg-center w-[214px] md:w-[397px] h-[156px] md:h-[205px] absolute left-[-10%] md:left-0 top-[-20%] "
+              />
+
               {/* Content Container */}
               <div className="flex flex-col items-center">
                 <div className="w-full flex justify-center mb-4 md:mb-6 bg-cover bg-center ">

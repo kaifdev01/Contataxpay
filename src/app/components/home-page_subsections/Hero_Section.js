@@ -128,7 +128,7 @@ const Hero_Section = () => {
             >
               Key Benefits
             </h1>
-            <div className="flex flex-row md:flex-row items-center justify-between mx-2 md:mx-7 mt-10 gap-6">
+            <div className="flex flex-row md:flex-row md:w-[84%] md:ml-20 items-center justify-between mx-2 md:mx-7 mt-10 gap-6">
               <div
                 className="bg-white rounded-[12px] p-[17px] w-[286px] shadow-[10px_10px_10px_0px_#E7EFFE] flex items-center gap-2"
                 style={{ zIndex: 1 }}
@@ -163,7 +163,7 @@ const Hero_Section = () => {
             />
 
             {/* 3rd Row */}
-            <div className="flex justify-center mt-12">
+            <div className="flex justify-center mt-12 ">
               <div
                 className="bg-white/80 p-[25px] rounded-[16px] w-[300px] md:w-[550px] shadow-[0_8px_32px_0_rgba(31,38,135,0.1)]"
                 style={{ zIndex: 1 }}

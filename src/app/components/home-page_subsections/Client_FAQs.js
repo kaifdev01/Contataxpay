@@ -112,15 +112,17 @@ const Client_FAQs = () => {
       </div>
 
       {/* FAQs */}
-      <div className="mt-12 flex flex-col md:flex-row items-center justify-around px-4">
-        <div
-          style={{ backgroundImage: `url(${assets.faqBg.src})` }}
-          className="bg-cover bg-center w-full max-w-[451px] h-[150px] sm:h-[180px] md:h-[217px] flex items-center justify-center rounded-lg"
-        >
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center font-normal px-4">
-            Frequently Asked <br />{" "}
-            <span className="text-[#AD4AF4]">Questions</span>
-          </h1>
+      <div className="mt-12 flex flex-col md:flex-row items-center justify-center md:justify-around px-4">
+        <div className="w-full ">
+          <div
+            style={{ backgroundImage: `url(${assets.faqBg.src})` }}
+            className="bg-cover bg-center w-full max-w-[451px] h-[150px] sm:h-[180px] md:h-[217px] flex items-center justify-center rounded-lg"
+          >
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center font-normal px-4">
+              Frequently Asked <br />{" "}
+              <span className="text-[#AD4AF4]">Questions</span>
+            </h1>
+          </div>
         </div>
 
         {/* FAQ Items */}
