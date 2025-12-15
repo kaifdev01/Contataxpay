@@ -1,6 +1,8 @@
 import logo from "./images/logo.png";
 import heroBg from "./images/hero-bg.png";
+import heroBgMobile from "./images/hero-bg-mobile.png";
 import smallStar from "./images/small-star.png";
+import smallStarMobile from "./images/small-star-mobile.png";
 import img1 from "./images/img1.png";
 import img2 from "./images/img2.png";
 import img3 from "./images/img3.png";
@@ -33,11 +35,20 @@ import rightLine from "./images/right-line.png";
 import benifitsBg from "./images/benifits-bg.png";
 import benifitsShadow from "./images/benifits-shadow.png";
 import tick from "./images/tick.png";
+import heroShadowSmall from "./images/hero-shadow-small.png";
+import heroBgShadow from "./images/hero-bg-shadow.png";
+import heroRightShadow from "./images/hero-right-shadow.png";
+import heroBenifitsShadow from "./images/hero-benifits-shadow.png";
+import heroBgShadowSmall from "./images/hero-bg-shadow-small.png";
+import heroBgRightShadowSmall from "./images/hero-bg-right-shadow-small.png";
+import bgRightShadow from "./images/bg-right-shadow.png";
 
 export const assets = {
   logo,
   heroBg,
+  heroBgMobile,
   smallStar,
+  smallStarMobile,
   img1,
   img2,
   img3,
@@ -70,4 +81,11 @@ export const assets = {
   benifitsBg,
   benifitsShadow,
   tick,
+  heroShadowSmall,
+  heroBgShadow,
+  heroRightShadow,
+  heroBenifitsShadow,
+  heroBgShadowSmall,
+  heroBgRightShadowSmall,
+  bgRightShadow,
 };
