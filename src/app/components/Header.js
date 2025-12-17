@@ -5,13 +5,14 @@ import { assets } from "../assets/assets";
 import Link from "next/link";
 import { MdKeyboardArrowDown, MdClose, MdMenu } from "react-icons/md";
 import { IoIosGlobe } from "react-icons/io";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   // Handle scroll effect
   useEffect(() => {
@@ -111,7 +112,7 @@ const Header = () => {
           <Link href="/" className="hover:text-gray-200 transition">
             Pricing
           </Link>
-          <Link href="/" className="hover:text-gray-200 transition">
+          <Link href="/contact" className="hover:text-gray-200 transition">
             Contact
           </Link>
 
@@ -140,13 +141,22 @@ const Header = () => {
       </div>
 
       {/* Mobile Header */}
-      <div className="md:hidden fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <div
+        className={`md:hidden fixed top-0 left-0 right-0 shadow-md z-50 ${
+          (pathname === "/contact" ? "bg-[#1E3594]" : "bg-[white] ",
+          pathname === "/hire_accountant"
+            ? "bg-[#E8F3FF] rounded-bl-[40px] rounded-br-[40px]"
+            : "bg-[white] ")
+        }`}
+      >
         <div className="flex items-center justify-between px-4 py-3">
           {/* Left: Hamburger + Logo */}
           <div className="flex items-center gap-2">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[#1e3593] text-3xl focus:outline-none active:scale-95 transition-transform"
+              className={` text-3xl focus:outline-none active:scale-95 transition-transform ${
+                pathname === "/contact" ? "text-white" : "text-[#1e3593]"
+              }`}
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <MdClose /> : <MdMenu />}
@@ -160,7 +170,11 @@ const Header = () => {
                 height={32}
                 priority
               />
-              <h1 className="text-base sm:text-lg text-[#1e3593] font-bold">
+              <h1
+                className={`text-base sm:text-lg text-[#1e3593] font-bold ${
+                  pathname === "/contact" ? "text-white" : "text-[#1e3593]"
+                }`}
+              >
                 Contataxpay
               </h1>
             </Link>
@@ -300,7 +314,7 @@ const Header = () => {
             </Link>
 
             <Link
-              href="/"
+              href="/contact"
               className="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition active:bg-white/20"
               onClick={() => setIsMenuOpen(false)}
             >
