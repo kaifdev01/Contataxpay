@@ -46,6 +46,10 @@ import featureIconBg from "./images/feature-icon-bg.png";
 import one from "./images/1.jpg";
 import service1 from "./images/service1.jpg";
 import service2 from "./images/service2.jpg";
+import polygon from "./images/polygon.png";
+import polygon1 from "./images/polygon1.png";
+import leftForm from "./images/left-form.png";
+import rightForm from "./images/right-form.png";
 
 export const assets = {
   logo,
@@ -96,4 +100,8 @@ export const assets = {
   one,
   service1,
   service2,
+  polygon,
+  polygon1,
+  leftForm,
+  rightForm,
 };

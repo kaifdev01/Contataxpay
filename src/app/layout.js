@@ -1,5 +1,4 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Wrapper from "./components/Wrapper";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -19,9 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
       <body className="font-inter">
-        <Header />
-        {children}
-        <Footer />
+        <Wrapper>{children}</Wrapper>
       </body>
     </html>
   );

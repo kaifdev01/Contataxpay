@@ -50,8 +50,9 @@ const Header = () => {
     <>
       {/* Desktop & Tablet Header */}
       <div
-        className={`hidden md:flex bg-[#1e3593] mx-3 lg:mx-5 my-3 lg:my-5 items-center justify-between rounded-full p-3 px-4 lg:px-7 transition-all duration-300 ${scrolled ? "shadow-lg" : ""
-          }`}
+        className={`hidden md:flex bg-[#1e3593] mx-3 lg:mx-5 my-3 lg:my-5 items-center justify-between rounded-full p-3 px-4 lg:px-7 transition-all duration-300 ${
+          scrolled ? "shadow-lg" : ""
+        }`}
       >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
@@ -126,11 +127,11 @@ const Header = () => {
           <Link href="/" className="hover:text-gray-200 transition">
             Help
           </Link>
-          <Link href="/" className="hover:text-gray-200 transition">
+          <Link href="/login" className="hover:text-gray-200 transition">
             Login
           </Link>
           <Link
-            href="/"
+            href="/signup"
             className="bg-[#3d70ff] py-2 px-4 lg:px-5 rounded-xl hover:bg-[#2a5aeb] transition whitespace-nowrap"
           >
             Signup
@@ -177,7 +178,7 @@ const Header = () => {
             </div>
 
             <Link
-              href="/"
+              href="/signup"
               className="bg-[#3d70ff] py-1.5 px-3 sm:px-4 rounded-lg text-white font-medium hover:bg-[#2a5aeb] transition text-xs sm:text-sm active:scale-95"
             >
               Signup
@@ -195,8 +196,9 @@ const Header = () => {
 
         {/* Mobile Menu Sidebar */}
         <div
-          className={`fixed top-0 left-0 h-full w-[280px] sm:w-[320px] bg-[#1e3593] z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
-            }`}
+          className={`fixed top-0 left-0 h-full w-[280px] sm:w-[320px] bg-[#1e3593] z-50 transform transition-transform duration-300 ease-in-out ${
+            isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
         >
           {/* Menu Header */}
           <div className="flex items-center justify-between p-4 border-b border-white/20">
@@ -244,14 +246,16 @@ const Header = () => {
               >
                 Services
                 <MdKeyboardArrowDown
-                  className={`transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""
-                    }`}
+                  className={`transition-transform duration-200 ${
+                    isServicesOpen ? "rotate-180" : ""
+                  }`}
                 />
               </button>
 
               <div
-                className={`overflow-hidden transition-all duration-300 ${isServicesOpen ? "max-h-60" : "max-h-0"
-                  }`}
+                className={`overflow-hidden transition-all duration-300 ${
+                  isServicesOpen ? "max-h-60" : "max-h-0"
+                }`}
               >
                 <div className="ml-4 mt-1 flex flex-col gap-1">
                   <Link
@@ -312,7 +316,7 @@ const Header = () => {
             </Link>
 
             <Link
-              href="/"
+              href="/login"
               className="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition active:bg-white/20"
               onClick={() => setIsMenuOpen(false)}
             >
