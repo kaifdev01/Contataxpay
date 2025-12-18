@@ -70,32 +70,41 @@ const Hero_Section = () => {
             style={{ backgroundImage: `url(${assets.headBg1.src})` }}
             className="bg-cover bg-center relative mt-12"
           >
-            {/* SHADOWS (Desktop Only) */}
-            <div
-              style={{ backgroundImage: `url(${assets.heroBgShadow.src})` }}
-              className="hidden md:block bg-cover w-[593px] h-[234px] absolute top-[55%]"
+            {/* SHADOW IMAGES FOR FLOATING EFFECT */}
+            <Image
+              alt="hero-bg-shadow"
+              className="hidden md:block w-[593px] h-[300px] z-0 absolute top-[20%] left-[10%] opacity-60"
+              src={assets.heroBgShadow}
             />
-            <div
-              style={{ backgroundImage: `url(${assets.heroShadowSmall.src})` }}
-              className="hidden md:block bg-cover w-[282px] h-[173px] absolute top-[75%]"
+            <Image
+              alt="hero-shadow-small"
+              src={assets.heroShadowSmall}
+              className="hidden md:block w-[282px] h-[173px] absolute top-[60%] left-[5%] z-0 opacity-50"
             />
-            <div
-              style={{
-                backgroundImage: `url(${assets.heroBgShadowSmall.src})`,
-              }}
-              className="bg-cover bg-center w-[248px] h-[245px] absolute top-[-10%] "
+            <Image
+              alt="hero-bg-shadow-small"
+              src={assets.heroBgShadowSmall}
+              className="w-[248px] h-[245px] absolute top-[-5%] left-[15%] z-0 opacity-40"
             />
-            <div
-              style={{
-                backgroundImage: `url(${assets.heroBgRightShadowSmall.src})`,
-              }}
-              className="bg-cover bg-center w-[451px] h-[217px] absolute right-[0%] top-[5%] "
+            <Image
+              alt="hero-bg-right-shadow-small"
+              src={assets.heroBgRightShadowSmall}
+              className="w-[451px] h-[217px] absolute right-[5%] top-[10%] z-0 opacity-50"
             />
-            <div
-              style={{
-                backgroundImage: `url(${assets.bgRightShadow.src})`,
-              }}
-              className="bg-cover bg-center w-[282px] h-[173px] absolute right-[5%] top-[83px] "
+            <Image
+              alt="bg-right-shadow"
+              src={assets.bgRightShadow}
+              className="absolute right-[10%] top-[50%] z-0 opacity-60"
+            />
+            <Image
+              alt="hero-right-shadow"
+              src={assets.heroRightShadow}
+              className="hidden md:block absolute right-[0%] top-[30%] z-0 opacity-30"
+            />
+            <Image
+              alt="benifits-shadow"
+              src={assets.benifitsShadow}
+              className="hidden md:block w-[400px] h-[200px] absolute top-[70%] left-[30%] z-0 opacity-40"
             />
 
             {/* 1st Row */}
@@ -159,7 +168,7 @@ const Hero_Section = () => {
               style={{
                 backgroundImage: `url(${assets.heroBenifitsShadow.src})`,
               }}
-              className="bg-cover bg-center w-[350px] md:w-[597px] h-[254px] absolute top-[57%] left-[10%] md:top-[40%] md:left-[27%] "
+              className="bg-cover bg-center w-[350px] md:w-[557px] lg:w-[650px] xl:w-[680px] h-[254px] absolute top-[57%] left-[10%] md:top-[40%] md:left-[0%] lg:left-[27%] xl:left-[36.5%] "
             />
 
             {/* 3rd Row */}

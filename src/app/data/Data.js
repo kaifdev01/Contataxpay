@@ -253,3 +253,123 @@ export const benifits = [
   { id: 2, img: assets.tick, title: "Secure and efficient " },
   { id: 3, img: assets.tick, title: "Transparent and professional" },
 ];
+
+export const accountantButtons = [
+  { id: 0, title: "Accounting Dashboard" },
+  { id: 1, title: "Connect Client" },
+  { id: 2, title: "My Assistants" },
+  { id: 3, title: "Messages" },
+  { id: 4, title: "Company Configuration" },
+];
+
+export const accountantDashCards = [
+  {
+    id: 0,
+    title: "Total Clients",
+    img: assets.users,
+    count: 2,
+    desc: "2 active clients",
+  },
+  {
+    id: 1,
+    title: "Monthly Revenue",
+    img: assets.dollar,
+    count: "275 €",
+    desc: "Current month revenue",
+  },
+  {
+    id: 2,
+    title: "Paid Amounts",
+    img: assets.greenTick,
+    count: "0€",
+    desc: "Paid collaboration amounts",
+  },
+  {
+    id: 3,
+    title: "Unpaid Amounts",
+    img: assets.bell,
+    count: "275 €",
+    desc: "Unpaid collaboration amounts",
+  },
+];
+
+export const dashboardCards = [
+  { id: 0, title: "Construction", count: 0, shadow: assets.dashShadow },
+  { id: 1, title: "Transport", count: 1, shadow: assets.dashShadow2 },
+  { id: 2, title: "Cleaning", count: 0, shadow: assets.dashShadow },
+  { id: 3, title: "IT & Software", count: 0, shadow: assets.dashShadow2 },
+  { id: 4, title: "Restaurant", count: 0, shadow: assets.dashShadow },
+  { id: 5, title: "Others", count: 0, shadow: assets.dashShadow2 },
+];
+
+export const summaryCards = [
+  {
+    title: "Total Clients",
+    value: "2",
+    subtext: "2 active clients",
+    img: assets.users,
+    bg: "bg-white",
+    iconBg: "text-gray-800",
+  },
+  {
+    title: "Total Expected",
+    value: "275 €",
+    subtext: "Expected Income",
+    img: assets.dollar,
+    bg: "bg-white",
+    iconBg: "text-gray-800",
+  },
+  {
+    title: "Total Paid",
+    value: "0€",
+    subtext: "Amount received",
+    img: assets.greenTick,
+    bg: "bg-white",
+    iconBg: "text-green-500",
+  },
+  {
+    title: "Total Outstanding",
+    value: "275 €",
+    subtext: "Remaining to be received",
+    subtextClass: "text-red-500",
+    valueClass: "text-red-500",
+    img: assets.bell, // Closest match to the struck dollar
+    bg: "bg-white",
+    iconBg: "text-gray-800",
+  },
+];
+
+export const clients = [
+  {
+    name: "Test Company",
+    role: "freelancer",
+    address: "Test Street, 12345 Test City",
+    phone: "12345678910",
+    email: "neurixsol@gmail.com",
+    amount: "55 EUR",
+  },
+  {
+    name: "Test Company",
+    role: "freelancer",
+    address: "Test Street, 12345 Test City",
+    phone: "12345678910",
+    email: "neurixsol@gmail.com",
+    amount: "55 EUR",
+  },
+  {
+    name: "Test Company",
+    role: "freelancer",
+    address: "Test Street, 12345 Test City",
+    phone: "12345678910",
+    email: "neurixsol@gmail.com",
+    amount: "55 EUR",
+  },
+  {
+    name: "Test Company",
+    role: "freelancer",
+    address: "Test Street, 12345 Test City",
+    phone: "12345678910",
+    email: "neurixsol@gmail.com",
+    amount: "55 EUR",
+  },
+];

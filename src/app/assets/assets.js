@@ -50,6 +50,13 @@ import polygon from "./images/polygon.png";
 import polygon1 from "./images/polygon1.png";
 import leftForm from "./images/left-form.png";
 import rightForm from "./images/right-form.png";
+import users from "./images/users.png";
+import dollar from "./images/dollar.png";
+import greenTick from "./images/green-tick.png";
+import bell from "./images/bell.png";
+import file from "./images/file.png";
+import dashShadow from "./images/dash-shadow.png";
+import dashShadow2 from "./images/dash-shadow2.png";
 
 export const assets = {
   logo,
@@ -104,4 +111,11 @@ export const assets = {
   polygon1,
   leftForm,
   rightForm,
+  users,
+  dollar,
+  greenTick,
+  bell,
+  file,
+  dashShadow,
+  dashShadow2,
 };

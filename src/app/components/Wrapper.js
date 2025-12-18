@@ -7,7 +7,11 @@ import Footer from "./Footer";
 const Wrapper = ({ children }) => {
   const pathname = usePathname();
 
-  const hideHeaderAndFooterPaths = ["/login", "/signup"];
+  const hideHeaderAndFooterPaths = [
+    "/login",
+    "/signup",
+    "/accountant_dashboard",
+  ];
   const shouldHideHeaderAndFooter = hideHeaderAndFooterPaths.includes(pathname);
 
   return (
